@@ -29,4 +29,21 @@ public class Carro {
     public void setVelocidade(double velocidade) {
         this.velocidade = velocidade;
     }
+
+    public void acelerar(){
+        velocidade += 10;
+        System.out.printf("O carro acelerou. Velocidade atual: %.2f km/h\n", velocidade);
+    }
+    public void frear(){
+        if (velocidade>= 10) {
+            velocidade -= 10;
+        }
+        else {
+            velocidade = 0;
+        }
+        System.out.printf("O carro freou. Velocidade atual: %.2f km/h\n", velocidade);
+    }
+    public void mostrarVelocidade(){
+        System.out.printf("Velocidade atual: %.2f km/h\n", velocidade);
+    }
 }
