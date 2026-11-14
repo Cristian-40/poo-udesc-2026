@@ -30,4 +30,23 @@ public class Livro {
     public void setEmprestado(Boolean emprestado) {
         this.emprestado = emprestado;
     }
+    public boolean isDisponivel() {
+        return !this.emprestado;
+    }
+    public void emprestar() {
+        if (isDisponivel()) {
+            this.emprestado = true;
+            System.out.println("O livro \"" + this.titulo + "\" foi emprestado com sucesso!");
+        } else {
+            System.out.println("O livro \"" + this.titulo + "\" já se encontra emprestado.");
+        }
+    }
+    public void devolver() {
+        if (!isDisponivel()) {
+            this.emprestado = false;
+            System.out.println("O livro \"" + this.titulo + "\" foi devolvido com sucesso!");
+        } else {
+            System.out.println("O livro \"" + this.titulo + "\" já estava na biblioteca.");
+        }
+    }
 }
