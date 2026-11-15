@@ -14,7 +14,9 @@ public class TesteContaBancaria {
         conta.depositar(500.0);
         conta.sacar(200.0);
         conta.imprimirSaldo();
+        System.out.println(conta.toString());
     }
+
 }
 
 

@@ -17,5 +17,10 @@ public class Circulo {
   public double area(){
     return (3.14 * (raio * raio));
   }
+  @Override
+  public String toString() {
+    return String.format("Raio: %.2f | Diâmetro: %.2f | Perímetro: %.2f | Área: %.2f",
+            raio, diametro(), perimetro(), area());
+  }
 }
 

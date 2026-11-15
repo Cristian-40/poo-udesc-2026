@@ -42,5 +42,10 @@ public class Contabancaria {
     public void imprimirSaldo() {
         System.out.printf("Saldo atual da conta %s: R$ %.2f\n", numeroconta, saldo);
     }
+    @Override
+    public String toString() {
+        return String.format("Número da Conta: %s | Titular: %s | Saldo: R$ %.2f",
+                numeroconta, titular, saldo);
+    }
 }
 
