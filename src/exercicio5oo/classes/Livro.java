@@ -48,5 +48,12 @@ public class Livro {
         } else {
             System.out.println("O livro \"" + this.titulo + "\" já estava na biblioteca.");
         }
+
+    }
+    @Override
+    public String toString() {
+        String status = (emprestado != null && emprestado) ? "Emprestado" : "Disponível";
+        return String.format("Título: %s | Autor: %s | Gênero: %s | Status: %s",
+                titulo, autor, genero, status);
     }
 }

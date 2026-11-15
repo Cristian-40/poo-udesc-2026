@@ -17,5 +17,6 @@ public class TesteLivro {
         System.out.println("Foi emprestado?: " + (livro.getEmprestado() ? "Emprestado" : "Não emprestado"));
         livro.devolver();
         System.out.println("Está disponível? " + (livro.isDisponivel() ? "Sim" : "Não"));
+        System.out.println(livro.toString());
     }
 }
