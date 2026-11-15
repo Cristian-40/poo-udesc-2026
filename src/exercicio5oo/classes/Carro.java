@@ -46,4 +46,9 @@ public class Carro {
     public void mostrarVelocidade(){
         System.out.printf("Velocidade atual: %.2f km/h\n", velocidade);
     }
+    @Override
+    public String toString() {
+        return String.format("Modelo: %s | Marca: %s | Ano: %d | Velocidade: %.2f km/h",
+                modelo, marca, ano, velocidade);
+    }
 }

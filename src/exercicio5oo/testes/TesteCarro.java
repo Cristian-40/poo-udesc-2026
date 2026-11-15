@@ -17,5 +17,6 @@ public class TesteCarro {
         corsa.acelerar();
         corsa.acelerar();
         corsa.frear();
+        System.out.println(corsa.toString());
     }
 }
